@@ -16,9 +16,7 @@ const About = () => {
             / / I am not your average developer
           </p>
           <p className='py-2 px-2 text-white'>
-            I have spent the last 12 years in the fire service working as a
-            professional firefighter/paramedic. I have always had a knack for
-            technology and working with computers. In 2019 I started working
+            I have always had a knack for technology and working with computers. In 2007 I started working
             with HTML and CSS to make some minor edits on a small business
             website that I was operating. What I thought was just a few small
             edits turned into a love for programming.
@@ -26,9 +24,8 @@ const About = () => {
           <p className='py-2 px-2 text-white'>
             Fascinated with how intricate programming can be I was quickly drawn
             to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I then started
-            freelancing for e-commerce companies on the Shopify platform. I am
-            now spending my time building projects with React JS, Firebase, and
+            enthused with making websites interactive. I am
+            now spending my time building projects with Next JS, AWS, Azure and
             learning new technologies.
           </p>
           <Link href='/#projects'>

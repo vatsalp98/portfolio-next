@@ -18,7 +18,7 @@ const Roles = ({ superpowers }) => {
         })}
         aria-label={selectedSuperpower}
       >
-        {typedSuperpower}
+        I&apos;m a {typedSuperpower}
       </span>
     </h2>
   );

@@ -3,6 +3,15 @@ import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import Roles from './typing/Roles';
+
+const roleTypes = [
+  "Web Developer",
+  "Mobile Developer", 
+  "Back-end Developer",
+  "Front-end Developer",
+  "Software Developer",
+];
 
 const Main = () => {
   return (
@@ -15,10 +24,10 @@ const Main = () => {
           <h1 className='py-4 text-white'>
             Hi, I&#39;m <span className='text-[#b15b5b]'> Vatsaal</span>
           </h1>
-          <h1 className='py-2 text-white'>A Software Developer</h1>
+          <Roles superpowers={roleTypes} />
           <p className='py-4 text-white sm:max-w-[70%] m-auto'>
             I’m focused on building responsive web and mobile applications while
-            focusing on serverless back-end technologies.
+            focusing on serverless back-end technologies. I am currently developing an application to help developing countries improve their health services.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a

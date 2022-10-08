@@ -68,22 +68,22 @@ const Navbar = () => {
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
               <Link href='/'>Home</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
               <Link href='/#about'>About</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
               <Link href='/#skills'>Skills</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
               <Link href='/#projects'>Projects</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
               <Link href='/resume'>Resume</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
               <Link href='/#contact'>Contact</Link>
             </li>
           </ul>

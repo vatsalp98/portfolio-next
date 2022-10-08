@@ -35,3 +35,20 @@ html {
     @apply shadow-lg shadow-gray-400 rounded-xl uppercase 
   }
 }
+
+@layer components {
+  .end-cursor:after {
+    content: '|';
+    @apply text-teal-300;
+  }
+
+  .end-cursor.blinking:after {
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}

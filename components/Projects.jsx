@@ -1,10 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+
 import React from 'react';
 import gvppsImg from '../public/assets/projects/gvpps.png';
 import salonPro from '../public/assets/projects/salonPro.png';
-import netflixImg from '../public/assets/projects/netflix.jpg'
-import twitchImg from '../public/assets/projects/twitch.jpg'
+import wedoc from '../public/assets/projects/wedoc.jpg'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -29,13 +27,14 @@ const Projects = () => {
             tech='Flutter / AWS / Next JS'
 
           />
-          {/* <ProjectItem
-            title='Netflix App'
-            backgroundImg={netflixImg}
-            projectUrl='/netflix'
-            tech='React JS'
+          <ProjectItem
+            title='WeDoc'
+            backgroundImg={wedoc}
+            projectUrl='/wedoc'
+            tech='TypeScript / React / AWS / Next JS / TailwindCSS'
 
           />
+          {/*
           <ProjectItem
             title='Twitch UI'
             backgroundImg={twitchImg}

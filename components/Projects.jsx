@@ -4,6 +4,7 @@ import gvppsImg from '../public/assets/projects/gvpps.png';
 import salonPro from '../public/assets/projects/salonPro.png';
 import wedoc from '../public/assets/projects/wedoc.jpg'
 import ProjectItem from './ProjectItem';
+import parmaartImg from '../public/assets/projects/parmaart1.jpg';
 
 const Projects = () => {
   return (
@@ -34,14 +35,12 @@ const Projects = () => {
             tech='TypeScript / React / AWS / Next JS / TailwindCSS'
 
           />
-          {/*
           <ProjectItem
-            title='Twitch UI'
-            backgroundImg={twitchImg}
-            projectUrl='/twitch'
-            tech='Next JS'
-
-          /> */}
+            title='Parmaart Store'
+            backgroundImg={parmaartImg}
+            projectUrl='/parmaart'
+            tech='Next JS / React / TailwindCSS / Firebase '
+          />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ const Roles = ({ superpowers }) => {
       onClick={resume}
     >
       <span
-        className={cn('text-[#b15b5b] pb-12 min-h-[10rem]', {
+        className={cn('text-[#b15b5b] pb-10 min-h-[10rem]', {
           ['end-cursor']: phase !== TypePhase.Deleting,
           ['blinking']: phase === TypePhase.Pausing,
         })}

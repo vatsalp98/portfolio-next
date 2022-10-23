@@ -3,32 +3,32 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { useRouter } from 'next/router';
+import { BsFillPersonLinesFill, BsMoonStarsFill } from 'react-icons/bs';
+import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/logo.png';
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#1f1f1f');
   const [linkColor, setLinkColor] = useState('#FFFFFF');
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
+  const [position, setPosition] = useState('fixed');
+  const [darkMode, setDarkMode] = useState(props.dark);
+  const router = useRouter();
 
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
+  useEffect(() => {
+    if (
+      router.asPath === '/salonPro' ||
+      router.asPath === '/wedoc' ||
+      router.asPath === '/gvpps' 
+    ) {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavBg('#1f1f1f');
+      setLinkColor('#ecf0f3');
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
+      style={{ backgroundColor: `${props.dark ? navBg : "#F5F5F5"}` }}
       className={
         shadow
           ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
@@ -66,30 +66,35 @@ const Navbar = () => {
             />
           </a>
         </Link>
+        <BsMoonStarsFill 
+          className={`cursor-pointer w-5 h-5 ${props.dark &&  "text-white"}`}
+          onClick={props.callBack}
+          />
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
+            <li className='ml-10 text-sm uppercase text-black hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b] dark:text-white'>
               <Link href='/'>Home</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b] text-black dark:text-white'>
               <Link href='/#about'>About</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b] text-black dark:text-white'>
               <Link href='/#skills'>Skills</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b] text-black dark:text-white'>
               <Link href='/#projects'>Projects</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b] text-black dark:text-white'>
               <Link href='/resume'>Resume</Link>
             </li>
-            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b]'>
+            <li className='ml-10 text-sm uppercase hover:border-b hover:text-[#b15b5b] hover:border-[#b15b5b] text-black dark:text-white'>
               <Link href='/#contact'>Contact</Link>
             </li>
           </ul>
+          
           {/* Hamburger Icon */}
           <div
-            style={{ color: `${linkColor}` }}
+            style={{ color: `${props.dark ? linkColor : "black"}` }}
             onClick={handleNav}
             className='md:hidden'
           >
@@ -108,9 +113,9 @@ const Navbar = () => {
         {/* Side Drawer Menu */}
         <div
           className={
-            nav
-              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#1f1f1f] p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+            `${nav
+              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500'
+              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'} dark:bg-[#1f1f1f] bg-[white]`
           }
         >
           <div>
@@ -133,46 +138,46 @@ const Navbar = () => {
               </div>
             </div>
             <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4 text-[#FFFFFF]'>
+              <p className='w-[85%] md:w-[90%] py-4 text-[#b15b5b] dark:text-white font-bold'>
                 Let&#39;s build something legendary together
               </p>
             </div>
           </div>
-          <div className='py-4 flex flex-col text-[#FFFFFF]'>
+          <div className='py-4 flex flex-col dark:text-white'>
             <ul className='uppercase'>
               <Link href='/'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline hover:text-[#b15b5b] font-semibold'>
                   Home
                 </li>
               </Link>
               <Link href='/#about'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline hover:text-[#b15b5b] font-semibold'>
                   About
                 </li>
               </Link>
               <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline hover:text-[#b15b5b] font-semibold'>
                   Skills
                 </li>
               </Link>
               <Link href='/#projects'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline hover:text-[#b15b5b] font-semibold'>
                   Projects
                 </li>
               </Link>
               <Link href='/resume'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline hover:text-[#b15b5b] font-semibold'>
                   Resume
                 </li>
               </Link>
               <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm hover:underline hover:text-[#b15b5b] font-semibold'>
                   Contact
                 </li>
               </Link>
             </ul>
             <div className='pt-20'>
-              <p className='uppercase tracking-widest text-[#c94d4d]'>
+              <p className='uppercase tracking-widest text-[#c94d4d] font-semibold'>
                 Let&#39;s Connect
               </p>
               <div className='flex items-center justify-between my-3 w-full sm:w-[70%]'>

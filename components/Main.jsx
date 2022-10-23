@@ -15,17 +15,17 @@ const roleTypes = [
 
 const Main = () => {
   return (
-    <div id='home' className='w-full h-screen text-center bg-[#1f1f1f]'>
+    <div id='home' className='w-full h-screen text-center dark:bg-[#1f1f1f] bg-[#F5F5F5]'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div>
-          <p className='uppercase text-sm tracking-widest text-white'>
+          <p className='uppercase text-sm tracking-widest text-[#1f1f1f] dark:text-white font-semibold'>
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className='py-4 text-white'>
+          <h1 className='py-4 text-[#1f1f1f] dark:text-white'>
             Hi, I&#39;m <span className='text-[#b15b5b]'> Vatsaal</span>
           </h1>
           <Roles superpowers={roleTypes} />
-          <p className='py-4 text-white sm:max-w-[70%] m-auto'>
+          <p className='pb-4 dark:text-white text-[#1f1f1f] sm:max-w-[70%] m-auto'>
             I’m focused on building responsive web and mobile applications while
             focusing on serverless back-end technologies. I am currently developing an application to help developing countries improve their health services.
           </p>
@@ -35,8 +35,8 @@ const Main = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <div className='bg-white rounded-full shadow-lg shadow-blue-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <FaLinkedinIn />
+              <div className='bg-white rounded-full shadow-lg shadow-blue-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-blue-400'>
+                <FaLinkedinIn className='h-5 w-5 duration-300 hover:text-white'/>
               </div>
             </a>
             <a
@@ -44,18 +44,18 @@ const Main = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <div className='bg-white rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <FaGithub />
+              <div className='bg-white rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-green-400'>
+                <FaGithub className='h-5 w-5 duration-300 hover:text-white'/>
               </div>
             </a>
             <Link href='/#contact'>
-              <div className='bg-white rounded-full shadow-lg shadow-orange-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <AiOutlineMail />
+              <div className='bg-white rounded-full shadow-lg shadow-orange-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-orange-400'>
+                <AiOutlineMail className='h-5 w-5 duration-300 hover:text-white'/>
               </div>
             </Link>
             <Link href='/resume'>
-              <div className='bg-white rounded-full shadow-lg shadow-red-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <BsFillPersonLinesFill />
+              <div className='bg-white rounded-full shadow-lg shadow-red-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-red-400'>
+                <BsFillPersonLinesFill className='h-5 w-5 duration-300 hover:text-white'/>
               </div>
             </Link>
           </div>

@@ -8,7 +8,7 @@ import Skills from '../components/Skills'
 
 export default function Home() {
   return (
-    <div className='bg-[#1f1f1f]'>
+    <div className='bg-[#1f1f1f] dark:bg-white'>
       <Head>
         <title>Vatsaal | Software Developer</title>
         <meta name="description" content="I’m a software developer specializing in building (and occasionally designing) exceptional digital experiences." />

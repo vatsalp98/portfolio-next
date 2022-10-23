@@ -7,12 +7,12 @@ import ProjectItem from './ProjectItem';
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full bg-[#1f1f1f]'>
+    <div id='projects' className='w-full bg-[#F5F5F5] dark:bg-[#1f1f1f]'>
       <div className='max-w-[1240px] mx-auto px-2 py-16'>
-        <p className='text-xl tracking-widest uppercase text-[#b15b5b]'>
+        <p className='text-xl tracking-widest uppercase text-[#b15b5b] font-semibold'>
           Projects
         </p>
-        <h2 className='py-4 text-white'>What I&apos;ve Built</h2>
+        <h2 className='py-4 text-[#1f1f1f] dark:text-white'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='gvpps.com'

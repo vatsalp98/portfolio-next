@@ -11,11 +11,11 @@ const Contact = () => {
 
   return (
     <div id='contact' className='w-full bg-[#1f1f1f] h-full'>
-      <div className='max-w-[1240px] m-auto px-2 py-16 w-full bg-[#1f1f1f]'>
-        <p className='text-xl tracking-widest uppercase text-[#b15b5b]'>
+      <div className='max-w-[1240px] m-auto px-2 py-16 w-full dark:bg-[#1f1f1f] bg-[#F5F5F5]'>
+        <p className='text-xl tracking-widest uppercase text-[#b15b5b] font-semibold'>
           Contact
         </p>
-        <h2 className='py-4 text-white'>Get In Touch</h2>
+        <h2 className='py-4 text-[#1f1f1f] dark:text-white'>Get In Touch</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-md shadow-gray-400 rounded-xl p-4'>
@@ -28,15 +28,15 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className='py-2 text-white'>Vatsaal Parmar</h2>
-                <p className='text-white'>Software Developer</p>
-                <p className='py-4 text-white'>
+                <h2 className='py-2 text-[#1f1f1f] dark:text-white'>Vatsaal Parmar</h2>
+                <p className='text-[#1f1f1f] dark:text-white'>Software Developer</p>
+                <p className='py-4 text-[#1f1f1f] dark:text-white'>
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
                 </p>
               </div>
               <div>
-                <p className='uppercase pt-8 text-white'>Connect With Me</p>
+                <p className='uppercase pt-8 text-[#1f1f1f] dark:text-white'>Connect With Me</p>
                 <div className='flex items-center justify-between py-4'>
                   <a
                     href='https://www.linkedin.com/in/vatsalparmar98/'
@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
 
           {/* right */}
-          <div className='text-white bg-[#1f1f1f] col-span-3 w-full h-auto shadow-md shadow-gray-400 rounded-xl lg:p-4'>
+          <div className='text-[#1f1f1f] dark:text-white bg-[#F5F5F5] dark:bg-[#1f1f1f] col-span-3 w-full h-auto shadow-md shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/08ebcd37-f5b5-45be-8c13-714f011ce060'
@@ -132,7 +132,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className='bg-[#1f1f1f] flex justify-center py-12'>
+        <div className='bg-[#F5F5F5] dark:bg-[#1f1f1f] flex justify-center py-12'>
           <Link href='/'>
             <a>
               <div className='rounded-full shadow-lg shadow-[#b15b5b] p-4 cursor-pointer hover:scale-110 ease-in duration-300'>

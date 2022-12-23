@@ -1,11 +1,22 @@
 import Image from 'next/image';
 import React from 'react';
+import Head from 'next/head';
 import salonPro2 from '../public/assets/projects/salonPro2.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
 const crypto = () => {
   return (
+    <>
+      <Head>
+        <title>Vatsaal | SalonPro</title>
+        <meta
+          name='description'
+          content='Best Social media network for beauty professionals to show off their skills in a portfolio of skills.'
+        />
+        <link rel='icon' href='/fav.png' />
+      </Head>
+    
     <div className='w-full bg-[#F5F5F5] dark:bg-[#1f1f1f]'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
@@ -82,6 +93,7 @@ const crypto = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

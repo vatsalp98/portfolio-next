@@ -5,6 +5,7 @@ import salonPro from '../public/assets/projects/salonPro.png';
 import wedoc from '../public/assets/projects/wedoc.jpg'
 import ProjectItem from './ProjectItem';
 import parmaartImg from '../public/assets/projects/parmaart1.jpg';
+import shiftImg from '../public/assets/projects/background_shift.jpg';
 
 const Projects = () => {
   return (
@@ -40,6 +41,12 @@ const Projects = () => {
             backgroundImg={parmaartImg}
             projectUrl='/parmaart'
             tech='Next JS / React / TailwindCSS / Firebase '
+          />
+          <ProjectItem
+            title='Shift Manager'
+            backgroundImg={shiftImg}
+            projectUrl='/shiftmanager'
+            tech='Next JS / React / TailwindCSS / Flutter / Typescript / AWS '
           />
         </div>
       </div>

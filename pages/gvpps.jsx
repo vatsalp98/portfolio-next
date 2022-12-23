@@ -3,9 +3,20 @@ import React from 'react';
 import gvppsImg from '../public/assets/projects/gvpps.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const property = () => {
   return (
+    <>
+      <Head>
+            <title>Vatsaal | G.V.P.P.S</title>
+            <meta
+              name='description'
+              content='Website to promote a newly opened table tennis club and help them attain attraction through improved SEO performance.'
+            />
+            <link rel='icon' href='/fav.png' />
+      </Head>
+    
     <div className='w-full bg-[#F5F5F5] dark:bg-[#1f1f1f]'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
@@ -76,6 +87,7 @@ const property = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

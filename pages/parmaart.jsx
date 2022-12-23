@@ -2,9 +2,20 @@ import Image from 'next/image';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import parmaartImg from '../public/assets/projects/parmaart1.jpg';
+import Head from 'next/head';
 
 const Parmaart = () => {
     return (
+        <>
+          <Head>
+            <title>Vatsaal | Parmaart</title>
+            <meta
+              name='description'
+              content='Ecommerce website for a local business to help improve their online presence and move into the digital environment.'
+            />
+            <link rel='icon' href='/fav.png' />
+          </Head>
+        
         <div className='w-full bg-[#F5F5F5] dark:bg-[#1f1f1f]'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
@@ -71,6 +82,7 @@ const Parmaart = () => {
         </Link>
       </div>
     </div>
+    </>
     );
 }
 

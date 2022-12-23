@@ -2,9 +2,20 @@ import Image from 'next/image';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 import wedocImg from '../public/assets/projects/wedoc2.jpg';
+import Head from 'next/head';
 
 const WeDoc = () => {
     return (
+        <>
+          <Head>
+            <title>Vatsaal | WeDoc </title>
+            <meta
+              name='description'
+              content='Software to help health professionals to schedule their workday with improved booking system and an online portfolio with custom static links.'
+            />
+            <link rel='icon' href='/fav.png' />
+          </Head>
+        
         <div className='w-full bg-[#F5F5F5] dark:bg-[#1f1f1f]'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
@@ -74,6 +85,7 @@ const WeDoc = () => {
         </Link>
       </div>
     </div>
+    </>
     );
 }
 

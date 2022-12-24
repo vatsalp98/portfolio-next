@@ -45,7 +45,7 @@ const ShiftManager = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <button className='px-8 py-2 mt-4 mr-8 shadow-lg shadow-[#b15b5b]'>Code</button>
+            <button className='px-8 py-2 mt-4 mr-8 shadow-lg shadow-[#b15b5b] font-bold text-[#1f1f1f] dark:text-white hover:bg-[#b15b5b] duration-100'>Code</button>
           </a>
           <a
             href='https://spontaneous-sunburst-46e7cc.netlify.app'
